@@ -41,7 +41,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .row2 a{color:#FF9900; background-color:#FFFFFF;}
 .row3, .row3 a{color:#919191; background-color:#232323;}
 
-/*----------------------------------------------Generalise-------------------------------------*/
+/*----------------------------------------------General-------------------------------------*/
 
 #header, #container, #footer{display:block; width:960px; margin:0 auto;}
 
@@ -97,7 +97,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 /* ------Slider-----*/
 
-#container #slider{margin-bottom:50px;}
+#container #slider{margin-bottom:100x;}
 
 /* ------Homepage-----*/
 
@@ -168,7 +168,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -246,7 +246,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
+  background: #888;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -254,7 +254,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: #43A047;
+  background: #aaa
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
