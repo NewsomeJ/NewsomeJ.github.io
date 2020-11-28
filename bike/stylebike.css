@@ -3,38 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     text-align: center;
 }
 
-#rt tire,
-#lft tire{
-    animation: tire 1s infinite linear;
+#right-wheel,#left-wheel{
+ animation: wheel 2s infinite linear;
+ transform-origin: center;
+ transform-box: fill-box;
+}
+
+#man-bike{
+animation: bike 1s ease-in-out infinite alternate;
+transform-origin: bottom;
+}
+
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
     transform-origin: center;
     transform-box: fill-box;
 }
 
-#manbike{
-    animation: bike 1s ease-in-out infinite alternate;
-    transform-origin: bottom;
-}
-
-@keyframes tire{
-from{
-transform: rotateZ(0deg);
-}
-to{
-transform: rotateZ(360deg);
+@keyframes wheel {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
 }
 
 @keyframes bike{
     from{
-transform: rotateX(0deg)
+    transform: rotateX(0deg);
     }
-
     to{
-transform: rotateX(20deg);
+    transform: rotateX(20deg);
     }
-    
 }
+
+@keyframes hat{
+    from {
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(40%);
+    }
 }
