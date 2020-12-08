@@ -2,52 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body {
+body{
     text-align: center;
 }
 
-#right-wheel,#left-wheel{
- animation: wheel 2s infinite linear;
- transform-origin: center;
- transform-box: fill-box;
+#rightwheel, #leftwheel {
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
-#man-bike{
-animation: bike 1s ease-in-out infinite alternate;
-transform-origin: bottom;
+#man-bike {
+    animation: man-bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+
 }
 
-#hat{
+
+#hat {
     animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: top;
     transform-origin: center;
     transform-box: fill-box;
 }
 
 @keyframes wheel {
     from{
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(360deg);
-    }
-}
-
-@keyframes bike{
-    from{
-    transform: rotateX(0deg);
+        transform:rotatez(0deg)
     }
     to{
-    transform: rotateX(20deg);
+        transform:rotatez(360deg)
     }
 }
 
-@keyframes hat{
-    from {
-        transform: translate(0%);
+@keyframes man-bike {
+
+    from{
+    transform: rotateX(0deg)
     }
-    to {
-        transform: translate(40%);
+
+    to{
+    transform: rotateX(20deg)
     }
+
+}
+@keyframes hat {
+
+    from{
+    transform: translateY(0%)
+    }
+
+    to{
+    transform: translateY(40%)
+    }
+
 }
